@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# Never commit raw / client data
+data/
+raw/
+client_data/
+outputs/
+out/
+private/
+_t/
+*.zip
+*.rar
+*.7z
+*.xlsx
+
+# Editor / IDE
+.vscode/
+.idea/

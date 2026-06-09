@@ -1,0 +1,45 @@
+# NOTE: not a real file — shown here for illustration only.
+# This is what ONE input record becomes after Stage 3 (identity isolation) and
+# Stage 4 (perspective duplication): the same hand is emitted twice, once with each
+# "main" actor relabelled to the hero ("Gedeon"), with unique IDs + timestamps so the
+# analytics tool cannot collapse them. Folding actors are relabelled "<pos>_folded-preflop".
+
+=== COPY A — main actor "BU" becomes the hero (id ...0011, time :00) ===
+PokerStars Hand #90000000011: Hold'em No Limit ($0.50/$1.00) - 2024/01/01 12:00:00 ET
+Table 'DemoTable' 6-max Seat #4 is the button
+Seat 1: LJ_folded-preflop ($100.00 in chips)
+Seat 2: HJ_folded-preflop ($100.00 in chips)
+Seat 3: CO_folded-preflop ($100.00 in chips)
+Seat 4: Gedeon ($100.00 in chips)
+Seat 5: SB_folded-preflop ($100.00 in chips)
+Seat 6: BB ($100.00 in chips)
+SB_folded-preflop: posts small blind $0.50
+BB: posts big blind $1.00
+*** HOLE CARDS ***
+LJ_folded-preflop: folds
+HJ_folded-preflop: folds
+CO_folded-preflop: folds
+Gedeon: raises $2.00 to $3.00
+SB_folded-preflop: folds
+BB: calls $2.00
+... (flop/showdown/summary unchanged, BU -> Gedeon throughout) ...
+
+=== COPY B — main actor "BB" becomes the hero (id ...0012, time :01) ===
+PokerStars Hand #90000000012: Hold'em No Limit ($0.50/$1.00) - 2024/01/01 12:00:01 ET
+Table 'DemoTable' 6-max Seat #4 is the button
+Seat 1: LJ_folded-preflop ($100.00 in chips)
+Seat 2: HJ_folded-preflop ($100.00 in chips)
+Seat 3: CO_folded-preflop ($100.00 in chips)
+Seat 4: BU ($100.00 in chips)
+Seat 5: SB_folded-preflop ($100.00 in chips)
+Seat 6: Gedeon ($100.00 in chips)
+SB_folded-preflop: posts small blind $0.50
+Gedeon: posts big blind $1.00
+*** HOLE CARDS ***
+LJ_folded-preflop: folds
+HJ_folded-preflop: folds
+CO_folded-preflop: folds
+BU: raises $2.00 to $3.00
+SB_folded-preflop: folds
+Gedeon: calls $2.00
+... (flop/showdown/summary unchanged, BB -> Gedeon throughout) ...
