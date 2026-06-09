@@ -1,7 +1,7 @@
 # Large-Scale Text Data Processing & Validation Pipeline
 
 **A Python automation project for reducing, transforming and validating millions of
-semi-structured text records — built for a real client, audited end to end.**
+semi-structured text records — built from a real client project, with all client data removed.**
 
 > 📄 Full write-up: **[docs/CASE_STUDY_EN.md](docs/CASE_STUDY_EN.md)**
 
