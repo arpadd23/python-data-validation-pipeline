@@ -1,6 +1,14 @@
 # Python
 __pycache__/
 *.pyc
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
 .env
 .env.*
 *.log
@@ -19,6 +27,10 @@ _t/
 *.rar
 *.7z
 *.xlsx
+
+# Local pipeline output / reports
+reduce_report.csv
+audit_report*.csv
 
 # Editor / IDE
 .vscode/

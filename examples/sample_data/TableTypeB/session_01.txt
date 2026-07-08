@@ -1,0 +1,826 @@
+PokerStars Hand #9000000077: Hold'em No Limit ($0.50/$1.00) - 2024/01/28 05:21:26 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($162.00 in chips)
+Seat 2: Bob ($200.00 in chips)
+Seat 3: Carol ($69.00 in chips)
+Seat 4: Dave ($176.00 in chips)
+Seat 5: Erin ($82.00 in chips)
+Seat 6: Frank ($140.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.00
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000078: Hold'em No Limit ($0.50/$1.00) - 2024/01/09 10:07:49 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($198.00 in chips)
+Seat 2: Bob ($178.00 in chips)
+Seat 3: Carol ($165.00 in chips)
+Seat 4: Dave ($73.00 in chips)
+Seat 5: Erin ($108.00 in chips)
+Seat 6: Frank ($192.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $2.50 to $3.50
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000079: Hold'em No Limit ($0.50/$1.00) - 2024/01/12 19:48:31 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($112.00 in chips)
+Seat 2: Bob ($128.00 in chips)
+Seat 3: Carol ($200.00 in chips)
+Seat 4: Dave ($93.00 in chips)
+Seat 5: Erin ($133.00 in chips)
+Seat 6: Frank ($172.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.00
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000080: Hold'em No Limit ($0.50/$1.00) - 2024/01/23 15:07:01 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($100.00 in chips)
+Seat 2: Bob ($139.00 in chips)
+Seat 3: Carol ($63.00 in chips)
+Seat 4: Dave ($164.00 in chips)
+Seat 5: Erin ($83.00 in chips)
+Seat 6: Frank ($117.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.50
+*** FLOP *** [Ah Kd 5h]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Ah Kd 5h]
+
+PokerStars Hand #9000000081: Hold'em No Limit ($0.50/$1.00) - 2024/01/27 03:29:07 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($134.00 in chips)
+Seat 2: Bob ($190.00 in chips)
+Seat 3: Carol ($129.00 in chips)
+Seat 4: Dave ($166.00 in chips)
+Seat 5: Erin ($183.00 in chips)
+Seat 6: Frank ($180.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $1.50
+*** FLOP *** [Qd Jc 6h]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [Qd Jc 6h]
+
+PokerStars Hand #9000000082: Hold'em No Limit ($0.50/$1.00) - 2024/01/08 14:35:09 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($190.00 in chips)
+Seat 2: Bob ($94.00 in chips)
+Seat 3: Carol ($77.00 in chips)
+Seat 4: Dave ($130.00 in chips)
+Seat 5: Erin ($166.00 in chips)
+Seat 6: Frank ($147.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $1.50 to $2.50
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [8h 8d 3c]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [8h 8d 3c]
+
+PokerStars Hand #9000000083: Hold'em No Limit ($0.50/$1.00) - 2024/01/26 16:17:52 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($185.00 in chips)
+Seat 2: Bob ($98.00 in chips)
+Seat 3: Carol ($174.00 in chips)
+Seat 4: Dave ($197.00 in chips)
+Seat 5: Erin ($183.00 in chips)
+Seat 6: Frank ($148.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $2.00 to $3.00
+Dave: folds
+Erin: folds
+Frank: calls $2.00
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000084: Hold'em No Limit ($0.50/$1.00) - 2024/01/11 17:48:34 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($108.00 in chips)
+Seat 2: Bob ($121.00 in chips)
+Seat 3: Carol ($158.00 in chips)
+Seat 4: Dave ($119.00 in chips)
+Seat 5: Erin ($165.00 in chips)
+Seat 6: Frank ($71.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $2.00 to $3.00
+Erin: folds
+Frank: calls $2.00
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000085: Hold'em No Limit ($0.50/$1.00) - 2024/01/11 23:30:45 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($186.00 in chips)
+Seat 2: Bob ($69.00 in chips)
+Seat 3: Carol ($92.00 in chips)
+Seat 4: Dave ($188.00 in chips)
+Seat 5: Erin ($144.00 in chips)
+Seat 6: Frank ($85.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $2.00 to $3.00
+Erin: folds
+Frank: calls $2.00
+*** FLOP *** [Ah Kd 5h]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [Ah Kd 5h]
+
+PokerStars Hand #9000000086: Hold'em No Limit ($0.50/$1.00) - 2024/01/28 14:06:33 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($164.00 in chips)
+Seat 2: Bob ($99.00 in chips)
+Seat 3: Carol ($79.00 in chips)
+Seat 4: Dave ($180.00 in chips)
+Seat 5: Erin ($127.00 in chips)
+Seat 6: Frank ($146.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $1.50 to $2.50
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [Ah Kd 5h]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [Ah Kd 5h]
+
+PokerStars Hand #9000000087: Hold'em No Limit ($0.50/$1.00) - 2024/01/20 22:25:41 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($157.00 in chips)
+Seat 2: Bob ($141.00 in chips)
+Seat 3: Carol ($184.00 in chips)
+Seat 4: Dave ($198.00 in chips)
+Seat 5: Erin ($69.00 in chips)
+Seat 6: Frank ($77.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $2.00 to $3.00
+Dave: folds
+Erin: folds
+Frank: calls $2.00
+*** FLOP *** [8h 8d 3c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [8h 8d 3c]
+
+PokerStars Hand #9000000088: Hold'em No Limit ($0.50/$1.00) - 2024/01/08 20:43:58 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($171.00 in chips)
+Seat 2: Bob ($85.00 in chips)
+Seat 3: Carol ($85.00 in chips)
+Seat 4: Dave ($173.00 in chips)
+Seat 5: Erin ($102.00 in chips)
+Seat 6: Frank ($136.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $1.50 to $2.50
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000089: Hold'em No Limit ($0.50/$1.00) - 2024/01/01 01:20:50 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($155.00 in chips)
+Seat 2: Bob ($170.00 in chips)
+Seat 3: Carol ($97.00 in chips)
+Seat 4: Dave ($122.00 in chips)
+Seat 5: Erin ($195.00 in chips)
+Seat 6: Frank ($165.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $2.00 to $3.00
+Dave: folds
+Erin: folds
+Frank: calls $2.00
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000090: Hold'em No Limit ($0.50/$1.00) - 2024/01/19 21:50:11 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($157.00 in chips)
+Seat 2: Bob ($121.00 in chips)
+Seat 3: Carol ($187.00 in chips)
+Seat 4: Dave ($96.00 in chips)
+Seat 5: Erin ($119.00 in chips)
+Seat 6: Frank ($178.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $1.50 to $2.50
+Dave: folds
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000091: Hold'em No Limit ($0.50/$1.00) - 2024/01/21 08:29:16 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($133.00 in chips)
+Seat 2: Bob ($199.00 in chips)
+Seat 3: Carol ($100.00 in chips)
+Seat 4: Dave ($78.00 in chips)
+Seat 5: Erin ($173.00 in chips)
+Seat 6: Frank ($148.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $1.50
+*** FLOP *** [Qd Jc 6h]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [Qd Jc 6h]
+
+PokerStars Hand #9000000092: Hold'em No Limit ($0.50/$1.00) - 2024/01/19 09:40:27 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($137.00 in chips)
+Seat 2: Bob ($110.00 in chips)
+Seat 3: Carol ($158.00 in chips)
+Seat 4: Dave ($183.00 in chips)
+Seat 5: Erin ($87.00 in chips)
+Seat 6: Frank ($120.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.00
+*** FLOP *** [Qd Jc 6h]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $6.50 from pot
+*** SUMMARY ***
+Total pot $6.50
+Board [Qd Jc 6h]
+
+PokerStars Hand #9000000093: Hold'em No Limit ($0.50/$1.00) - 2024/01/13 18:22:36 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($65.00 in chips)
+Seat 2: Bob ($161.00 in chips)
+Seat 3: Carol ($130.00 in chips)
+Seat 4: Dave ($62.00 in chips)
+Seat 5: Erin ($72.00 in chips)
+Seat 6: Frank ($187.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $2.50 to $3.50
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000094: Hold'em No Limit ($0.50/$1.00) - 2024/01/27 09:49:51 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($116.00 in chips)
+Seat 2: Bob ($108.00 in chips)
+Seat 3: Carol ($124.00 in chips)
+Seat 4: Dave ($95.00 in chips)
+Seat 5: Erin ($84.00 in chips)
+Seat 6: Frank ($70.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $2.50 to $3.50
+Dave: folds
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000095: Hold'em No Limit ($0.50/$1.00) - 2024/01/10 14:02:37 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($83.00 in chips)
+Seat 2: Bob ($135.00 in chips)
+Seat 3: Carol ($143.00 in chips)
+Seat 4: Dave ($166.00 in chips)
+Seat 5: Erin ($104.00 in chips)
+Seat 6: Frank ($111.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $2.50 to $3.50
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [Ah Kd 5h]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Ah Kd 5h]
+
+PokerStars Hand #9000000096: Hold'em No Limit ($0.50/$1.00) - 2024/01/05 17:56:23 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($102.00 in chips)
+Seat 2: Bob ($125.00 in chips)
+Seat 3: Carol ($183.00 in chips)
+Seat 4: Dave ($135.00 in chips)
+Seat 5: Erin ($146.00 in chips)
+Seat 6: Frank ($89.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.50
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000097: Hold'em No Limit ($0.50/$1.00) - 2024/01/15 02:09:48 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($153.00 in chips)
+Seat 2: Bob ($83.00 in chips)
+Seat 3: Carol ($161.00 in chips)
+Seat 4: Dave ($63.00 in chips)
+Seat 5: Erin ($127.00 in chips)
+Seat 6: Frank ($197.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $2.50 to $3.50
+Dave: folds
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [Qd Jc 6h]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Qd Jc 6h]
+
+PokerStars Hand #9000000098: Hold'em No Limit ($0.50/$1.00) - 2024/01/04 14:23:43 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($157.00 in chips)
+Seat 2: Bob ($155.00 in chips)
+Seat 3: Carol ($87.00 in chips)
+Seat 4: Dave ($119.00 in chips)
+Seat 5: Erin ($180.00 in chips)
+Seat 6: Frank ($66.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.50
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000099: Hold'em No Limit ($0.50/$1.00) - 2024/01/20 17:20:58 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($178.00 in chips)
+Seat 2: Bob ($137.00 in chips)
+Seat 3: Carol ($164.00 in chips)
+Seat 4: Dave ($89.00 in chips)
+Seat 5: Erin ($95.00 in chips)
+Seat 6: Frank ($71.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $1.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000100: Hold'em No Limit ($0.50/$1.00) - 2024/01/02 09:31:07 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($94.00 in chips)
+Seat 2: Bob ($159.00 in chips)
+Seat 3: Carol ($176.00 in chips)
+Seat 4: Dave ($154.00 in chips)
+Seat 5: Erin ($198.00 in chips)
+Seat 6: Frank ($167.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $1.50 to $2.50
+Dave: folds
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [8h 8d 3c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [8h 8d 3c]
+
+PokerStars Hand #9000000101: Hold'em No Limit ($0.50/$1.00) - 2024/01/19 23:46:09 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($185.00 in chips)
+Seat 2: Bob ($164.00 in chips)
+Seat 3: Carol ($131.00 in chips)
+Seat 4: Dave ($68.00 in chips)
+Seat 5: Erin ($154.00 in chips)
+Seat 6: Frank ($115.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $2.50 to $3.50
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000102: Hold'em No Limit ($0.50/$1.00) - 2024/01/15 14:15:54 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($199.00 in chips)
+Seat 2: Bob ($151.00 in chips)
+Seat 3: Carol ($75.00 in chips)
+Seat 4: Dave ($161.00 in chips)
+Seat 5: Erin ($130.00 in chips)
+Seat 6: Frank ($108.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: raises $1.50 to $2.50
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Dave: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Dave
+Dave collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000103: Hold'em No Limit ($0.50/$1.00) - 2024/01/04 14:05:42 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($65.00 in chips)
+Seat 2: Bob ($72.00 in chips)
+Seat 3: Carol ($145.00 in chips)
+Seat 4: Dave ($122.00 in chips)
+Seat 5: Erin ($92.00 in chips)
+Seat 6: Frank ($112.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $2.50 to $3.50
+Dave: folds
+Erin: folds
+Frank: calls $2.50
+*** FLOP *** [8h 8d 3c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [8h 8d 3c]
+
+PokerStars Hand #9000000104: Hold'em No Limit ($0.50/$1.00) - 2024/01/03 17:13:37 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($97.00 in chips)
+Seat 2: Bob ($60.00 in chips)
+Seat 3: Carol ($130.00 in chips)
+Seat 4: Dave ($97.00 in chips)
+Seat 5: Erin ($93.00 in chips)
+Seat 6: Frank ($198.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $1.50 to $2.50
+Dave: folds
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [Ts 9s 4c]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [Ts 9s 4c]
+
+PokerStars Hand #9000000105: Hold'em No Limit ($0.50/$1.00) - 2024/01/09 05:07:42 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($151.00 in chips)
+Seat 2: Bob ($120.00 in chips)
+Seat 3: Carol ($142.00 in chips)
+Seat 4: Dave ($64.00 in chips)
+Seat 5: Erin ($104.00 in chips)
+Seat 6: Frank ($127.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: raises $1.50 to $2.50
+Dave: folds
+Erin: folds
+Frank: calls $1.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Carol: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Carol
+Carol collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000106: Hold'em No Limit ($0.50/$1.00) - 2024/01/02 04:47:26 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($181.00 in chips)
+Seat 2: Bob ($174.00 in chips)
+Seat 3: Carol ($152.00 in chips)
+Seat 4: Dave ($191.00 in chips)
+Seat 5: Erin ($87.00 in chips)
+Seat 6: Frank ($175.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $1.50
+*** FLOP *** [7c 3d 2s]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $5.50 from pot
+*** SUMMARY ***
+Total pot $5.50
+Board [7c 3d 2s]
+
+PokerStars Hand #9000000107: Hold'em No Limit ($0.50/$1.00) - 2024/01/17 07:39:02 ET
+Table 'Demo-TableTypeB-1' 6-max Seat #4 is the button
+Seat 1: Alice ($137.00 in chips)
+Seat 2: Bob ($177.00 in chips)
+Seat 3: Carol ($67.00 in chips)
+Seat 4: Dave ($75.00 in chips)
+Seat 5: Erin ($182.00 in chips)
+Seat 6: Frank ($162.00 in chips)
+Erin: posts small blind $0.50
+Frank: posts big blind $1.00
+*** HOLE CARDS ***
+Alice: folds
+Bob: folds
+Carol: folds
+Dave: folds
+Frank: calls $2.50
+*** FLOP *** [8h 8d 3c]
+Frank: checks
+Erin: bets $4.00
+Frank: folds
+Uncalled bet ($4.00) returned to Erin
+Erin collected $7.50 from pot
+*** SUMMARY ***
+Total pot $7.50
+Board [8h 8d 3c]
+

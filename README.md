@@ -1,159 +1,218 @@
-# Large-Scale Text Data Processing & Validation Pipeline
+# recpipe — audit, reduce, transform & validate record-based text datasets
 
-**A Python automation project for reducing, transforming and validating millions of
-semi-structured text records — built from a real client project, with all client data removed.**
+[![CI](https://github.com/arpadd23/python-data-validation-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/arpadd23/python-data-validation-pipeline/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)
 
-> 📄 Full write-up: **[docs/CASE_STUDY_EN.md](docs/CASE_STUDY_EN.md)**
+**recpipe** is a small, dependency-free Python toolkit and CLI for working with large
+collections of *record-based text files* — plain-text files that hold many records back
+to back, where each record starts at a line with a known marker (poker hand histories,
+log exports, vCard dumps, simulator output, chat transcripts…).
 
----
+It was extracted from a real client project that processed **~11.6M records across
+~65,000 files**, with all client data removed. The full story is in
+[docs/CASE_STUDY_EN.md](docs/CASE_STUDY_EN.md).
 
-## 1. Executive summary
-
-A client held **millions of semi-structured text records** across tens of thousands of
-files — too large, too noisy, and too unreliable to analyze efficiently in their analytics
-software. I built an **automated Python pipeline** that audited, reduced (~17×), transformed
-and validated the data into a clean, **import-ready ~1.13M-record dataset** — with **zero
-validation mismatches** and without ever modifying the original files. Along the way I
-diagnosed and **worked around a silent deduplication issue in the third-party software**
-that had been distorting the client's import results.
-
-This is a **data-automation / data-engineering** project. The domain happened to be poker
-hand histories, but the work is parsing, sampling, transformation, validation and audit at
-scale.
+> **Status: early stage (v0.1).** The core pipeline is implemented, tested and used by
+> its author. It does not (yet) have a user base beyond that — see the honest
+> [limitations](#limitations) and [roadmap](#roadmap) below.
 
 ---
 
-## 2. Problem
+## The problem it solves
 
-The raw archive was organized into 37 dataset folders across three categories; each file
-held a variable number of records (40–2,000+). In this state the data was:
+Semi-structured text archives get big and messy quietly:
 
-- **too large** to import and analyze quickly,
-- **noisy** — irrelevant entries polluted the metrics the client cared about,
-- **fragile** — one malformed byte and the analytics tool silently drops the record,
-- **partly duplicated** — some datasets existed twice under different names.
+- they become **too large** to import into analytics tools in reasonable time;
+- **duplicate files and folders** (`dataset_old/`, `dataset_fixed/`…) creep in and
+  silently double-count everything downstream;
+- naive down-sampling (take the first N, take whole files) **distorts the distribution**
+  you're trying to analyze;
+- ad-hoc cleanup scripts **modify data in place** and leave you unable to prove that
+  what came out matches what went in.
 
-The client needed it **shrunk, cleaned, restructured and made import-ready** — without
-distorting the statistical picture.
+recpipe is built around one idea: **every step must be verifiable, and the original
+data is never touched.** Each stage writes to a fresh output tree, re-reads what it
+wrote (read-back verification), emits a per-file CSV audit report, and a separate
+`validate` command re-checks the whole run through an independent code path.
 
----
+## Who it's for
 
-## 3. Solution pipeline (4 stages)
+- Data engineers / analysts handed a folder of thousands of text files and asked to
+  "make this importable".
+- Anyone who needs a **distribution-preserving sample** of a huge record archive.
+- Anyone who needs to **anonymize or relabel** text records in bulk *without* breaking
+  the record structure their downstream tool depends on.
 
-| Stage | What it does |
-|-------|--------------|
-| **1–2 · Audit & Reduce** | File-level audit + reports, then **target-driven proportional sampling** (evenly sampled within each file, weighted per category) so the smaller sample preserves the original distribution. |
-| **3 · Identity isolation** | Section-aware text rewriting to relabel "noise" actors so they don't pollute the real analysis targets' statistics. |
-| **4 · Perspective duplication** | Each record regenerated from two analytical viewpoints with **unique IDs and timestamps**, so the analytics tool's content-deduplication can't collapse them. |
-
-```
- RAW INPUT            AUDIT + REDUCE        IDENTITY          PERSPECTIVE        IMPORT-READY
- ~64.9k files  ──►  proportional   ──►   isolation   ──►   duplication  ──►   ~1.13M records
- ~11.6M recs        sampling             (relabel)         (2 views,          (0 mismatches)
- 37 folders            │                                    unique id+time)
-      └─ dedup ──►  ~9.7M recs ──►  ~567k representative records
-        [ every stage: re-read & validated · originals never overwritten ]
-```
-
----
-
-## 4. Results & business value
-
-| Metric | Value |
-|--------|-------|
-| Raw input | ~64,900 files · ~11.6M records · 37 folders |
-| After data-quality dedup (3 duplicate folders removed) | ~59,700 files · ~9.7M records · 34 folders |
-| Reduced representative sample | **~567,000 records** (5–46× per category) |
-| Final import-ready dataset | **~1.13M records** |
-| Validation mismatches | **0** |
-| Original data overwritten | **Never** |
-
-- Replaced **manual, error-prone handling** with a repeatable, parameterized pipeline.
-- **~17× smaller** dataset, distribution preserved → faster, lighter, more reliable imports.
-- **Audited, validated output** the client can trust.
-- **Surfaced and fixed hidden data-quality issues** (duplicate datasets) the client hadn't noticed.
-- **Diagnosed and worked around a silent third-party deduplication issue** that had been
-  distorting the client's import results.
-- **Reusable scripts + documentation** delivered.
-
----
-
-## 5. Technical challenges (the diagnostic moments)
-
-- **Rejected a misleading "obvious" approach.** The intuitive "divide by the smallest file"
-  rule would have produced near-zero reduction; I proved a built-in floor guaranteed no
-  record loss at *any* divisor, so the divisor could be chosen by *goal* instead.
-- **Solved a "numbers don't match" mystery.** Proved my output was bit-for-bit correct via
-  hash-level analysis, then traced the fault to the analytics tool's **ID-based dedup** plus
-  import accumulation — resolved with a clean-database protocol.
-- **Caught a hidden data-quality bug** — duplicate `_old`/`_fixed` folders with identical
-  counts (double-counting risk), excluded.
-- **Defeated content-based deduplication** with unique, incrementing timestamps; proved the
-  remaining ~3% was genuine duplicate content (zero information loss).
-
----
-
-## 6. Tools
-
-Python (`re`, `pathlib`, `openpyxl`), CSV/Excel reporting, **binary-safe file I/O**
-(CRLF & encoding preserved), Windows/PowerShell, Hand2Note (client analytics tool).
-
----
-
-## 7. Validation approach
-
-Reliability was a first-class goal, not an afterthought:
-
-- **Dry-run → apply** pattern on every transformation (preview counts before writing).
-- **Read-back verification:** every output file is re-parsed and its record count compared
-  to the expected count → status `OK` / `MISMATCH` (final result: **0 mismatches**).
-- **Independent verification script** (`src/verify_report.py`) that re-derives the numbers
-  from scratch — a separate code path, so a reducer bug can't hide in its own self-check.
-- **Per-file audit reports** — see [`samples/audit_report_sample.csv`](samples/audit_report_sample.csv).
-- **Defensive output:** originals are never overwritten; every stage writes to a new root.
-
----
-
-## 8. Repository structure
-
-```
-.
-├── README.md
-├── docs/
-│   └── CASE_STUDY_EN.md          # full case study
-├── src/
-│   ├── reduce_proportional.py    # stage 1–2: audit + proportional reduction (+ CSV report)
-│   └── verify_report.py          # independent validation pass
-└── samples/                      # synthetic, NO client data
-    ├── sample_input.txt          # one raw record (standard format)
-    ├── sample_output.txt         # the same record after stages 3–4 (illustrative)
-    └── audit_report_sample.csv   # per-file validation report shape
-```
-
-Try it on the synthetic sample:
+## Install
 
 ```bash
-python src/reduce_proportional.py --input samples --output out --divisor 5 --apply
-python src/verify_report.py     --input samples --output out --divisor 5
+# from a clone (recommended while the project is pre-PyPI)
+git clone https://github.com/arpadd23/python-data-validation-pipeline.git
+cd python-data-validation-pipeline
+pip install .
+
+# for development
+pip install -e ".[dev]"
 ```
 
----
+Requires Python 3.9+. No runtime dependencies.
 
-## Disclaimer
+## Quickstart
 
-- **No client data is included in this repository.** The original hand-history files,
-  client datasets, and any tool-specific import files are **not shared**.
-- The files under [`samples/`](samples/) are **synthetic, fabricated examples** — they
-  contain no real or client data.
-- Numbers describe the scale and outcome of the work; the underlying data remains private
-  to the client.
+The repo ships a tiny synthetic dataset (240 records, generated by
+[examples/generate_sample_data.py](examples/generate_sample_data.py) — no real data)
+with two planted problems: a duplicate folder and an empty file.
 
----
+**1. Audit** — read-only survey; finds both planted problems:
+
+```console
+$ recpipe audit --input examples/sample_data --marker "PokerStars Hand #"
+files=13  records=240  bytes=170,049
+empty files: 1
+DUPLICATE FILES (2): TableTypeA/session_01.txt, TableTypeA_old/session_01.txt
+...
+DUPLICATE FOLDERS (2): TableTypeA, TableTypeA_old
+```
+
+**2. Reduce** — keep a proportional, evenly-spaced sample of every file. Dry run by
+default; add `--apply` to write:
+
+```console
+$ recpipe reduce --input examples/sample_data --output out/reduced \
+    --divisor 5 --marker "PokerStars Hand #" --apply --report reduce_report.csv
+files=13  records: 240 -> 49 (4.9x)  mismatches=0
+report: reduce_report.csv
+```
+
+**3. Transform** — apply regex rules to every record (here: anonymize player names):
+
+```console
+$ recpipe transform --input out/reduced --output out/anonymized \
+    --rules examples/rules/anonymize.json --marker "PokerStars Hand #" --apply
+files=13  records=49  modified=49  replacements=911  mismatches=0
+```
+
+**4. Validate** — independent re-check of each stage, through a separate code path:
+
+```console
+$ recpipe validate --input examples/sample_data --output out/reduced \
+    --divisor 5 --marker "PokerStars Hand #"
+  OK         12
+  EMPTY_OK   1
+RESULT: ALL OK
+
+$ recpipe validate --input out/reduced --output out/anonymized \
+    --marker "PokerStars Hand #"
+RESULT: ALL OK
+```
+
+Exit codes are script-friendly everywhere: `0` clean, `1` mismatches/failures, `2` bad
+usage.
+
+## CLI commands
+
+| Command | What it does | Writes data? |
+|---|---|---|
+| `recpipe audit` | Per-file record counts, sizes, hashes; detects duplicate files, duplicate folders and empty files. | No (report only) |
+| `recpipe reduce` | Proportional down-sampling: half-up rounding, evenly-spaced picks across each file, floor of 1 record per non-empty file. | With `--apply` |
+| `recpipe transform` | Ordered regex substitution rules (JSON file) applied to every record; record count verified unchanged. | With `--apply` |
+| `recpipe validate` | Re-derives expected vs. actual counts for a finished run (`--divisor N` after a reduce, default exact match). | No (report only) |
+
+Common flags: `--marker` (required — the string a record-start line begins with),
+`--glob` (default `*.txt`), `--report <csv>`.
+
+## Python API
+
+Everything the CLI does is available as plain functions:
+
+```python
+from pathlib import Path
+from recpipe import audit_tree, reduce_tree, load_rules, transform_tree, validate_tree
+
+MARKER = "PokerStars Hand #"
+data = Path("examples/sample_data")
+
+audit = audit_tree(data, MARKER)
+print(audit.total_records, [str(p[0]) for p in audit.duplicate_folder_groups])
+
+reduced = reduce_tree(data, Path("out/reduced"), divisor=5, marker=MARKER, apply=True)
+assert reduced.mismatches == 0
+
+rules = load_rules(Path("examples/rules/anonymize.json"))
+transform_tree(Path("out/reduced"), Path("out/anon"), rules, MARKER, apply=True)
+
+check = validate_tree(data, Path("out/reduced"), MARKER, divisor=5)
+assert check.ok
+```
+
+## A typical workflow
+
+```
+ raw archive          audit                reduce               transform            validate
+ (never touched) ──►  find duplicates ──►  distribution-   ──►  anonymize /     ──►  independent
+                      & empty files        preserving sample    relabel records      re-check: 0 mismatches
+                          │                    │                    │
+                          └────────── per-file CSV reports at every stage ──────────┘
+```
+
+Rules of the pipeline, enforced in code:
+
+- **Originals are never modified** — output roots must differ from input roots.
+- **Dry run first** — `reduce` and `transform` only write with `--apply`.
+- **Read-back verification** — every written file is re-read and re-counted.
+- **Independent validation** — `validate` shares no logic with the writing stages, so
+  a stage bug can't hide in its own self-check.
+- **Bytes in, bytes out** — records pass through as raw bytes; encodings, CRLF line
+  endings and even malformed bytes are preserved exactly.
+
+## Limitations
+
+Honest list, as of v0.1:
+
+- **Whole-file processing in memory** — each file is read fully; fine for files up to
+  hundreds of MB, not designed for single multi-GB files (streaming is on the roadmap).
+- **Marker-based records only** — a record must start at a line prefix. Formats that
+  need real parsing (JSON, XML, multi-line delimiters with state) are out of scope.
+- **Byte-level regex rules** — transform patterns are matched against UTF-8-encoded
+  bytes; patterns targeting non-UTF-8-encodable text aren't supported yet.
+- **Sampling is per-file proportional** — there is no global stratified sampling
+  across category weights yet (in the original project that weighting was done by
+  choosing divisors per category; see the roadmap).
+- **Young project** — built and used by one maintainer so far; APIs may still move
+  before 1.0.
+
+## Roadmap
+
+Short version (full details and good-first-issue candidates in
+[docs/ROADMAP.md](docs/ROADMAP.md)):
+
+- v0.2: streaming record iteration for very large files; per-category divisor config;
+  `--workers` for parallel tree processing.
+- v0.3: perspective duplication stage (the last stage of the original pipeline,
+  generalized); JSONL report output.
+- Publishing to PyPI once the CLI surface has settled.
+
+## Where this comes from
+
+This toolkit is the reusable core of a real data-engineering engagement: ~65k files /
+~11.6M poker-simulator records that had to be audited, de-duplicated, reduced ~17×
+into a distribution-preserving sample, transformed and re-validated for a third-party
+analytics tool — finishing with zero validation mismatches and without ever modifying
+an original file. All client data was removed; the sample data here is synthetic.
+Read the full write-up: [docs/CASE_STUDY_EN.md](docs/CASE_STUDY_EN.md).
+
+## Contributing
+
+Issues and PRs are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md) and the
+[roadmap](docs/ROADMAP.md) for good entry points. Run the checks locally with:
+
+```bash
+pip install -e ".[dev]"
+ruff check src tests examples
+pytest
+```
 
 ## License
 
-Released under the **[MIT License](LICENSE)** — free to reuse with attribution.
-
----
-
-*Full case study: **[docs/CASE_STUDY_EN.md](docs/CASE_STUDY_EN.md)**.*
+[MIT](LICENSE).

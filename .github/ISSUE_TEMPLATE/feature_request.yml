@@ -1,0 +1,40 @@
+name: Feature request
+description: Suggest an improvement or new capability.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing, skim [docs/ROADMAP.md](../../blob/main/docs/ROADMAP.md) — your
+        idea may already be planned (comment on it there / here to help prioritize),
+        and the non-goals section explains what recpipe intentionally won't do.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you trying to do with your dataset that recpipe can't do today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What would the CLI flag / API look like? Rough sketches welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Workarounds you've tried
+    validations:
+      required: false
+  - type: dropdown
+    id: contribute
+    attributes:
+      label: Would you like to implement this yourself?
+      options:
+        - "Yes, with some guidance"
+        - "Yes, independently"
+        - "No, just suggesting"
+    validations:
+      required: true

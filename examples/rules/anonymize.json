@@ -1,0 +1,11 @@
+{
+  "description": "Demo transform: anonymize player names in the synthetic sample data. Word boundaries keep the substitutions from touching card notation or amounts.",
+  "rules": [
+    { "pattern": "\\bAlice\\b", "replacement": "Player1" },
+    { "pattern": "\\bBob\\b", "replacement": "Player2" },
+    { "pattern": "\\bCarol\\b", "replacement": "Player3" },
+    { "pattern": "\\bDave\\b", "replacement": "Player4" },
+    { "pattern": "\\bErin\\b", "replacement": "Player5" },
+    { "pattern": "\\bFrank\\b", "replacement": "Player6" }
+  ]
+}

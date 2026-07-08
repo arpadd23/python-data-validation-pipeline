@@ -115,10 +115,6 @@ These are the parts that show real engineering, not just "ran a script":
                          [ every stage: re-read & validated · originals never overwritten ]
 ```
 
-*(Suggested visuals for the portfolio page: this diagram as a clean graphic, plus a
-screenshot of an audit report — e.g. `after_report_*.csv` showing per-file
-original/expected/actual counts with `status = OK` and zero mismatches.)*
-
 ---
 
 ## Tools
@@ -129,10 +125,21 @@ Full documentation + file-based project memory for continuity.
 
 ---
 
-## One-line CV / LinkedIn bullet
+## From case study to open-source toolkit
 
-> *Built an automated Python pipeline that processed ~10M semi-structured text records:
-> audited and de-duplicated the dataset, reduced it ~17× to a distribution-preserving
-> representative sample, transformed it for a third-party analytics tool, and validated every
-> step (zero mismatches) — including diagnosing and working around a silent deduplication
-> issue in the client's software that was distorting results.*
+The reusable core of this work now lives in this repository as **recpipe** (see the
+[README](../README.md)) — an installable package and CLI with `audit`, `reduce`,
+`transform` and `validate` commands:
+
+- Stages **1–2** (audit + proportional reduction) map to `recpipe audit` and
+  `recpipe reduce`.
+- Stage **3** (identity isolation) is generalized as `recpipe transform` — ordered
+  regex substitution rules applied per record, with record counts verified unchanged.
+- Stage **4** (perspective duplication) is not yet generalized; it is on the
+  [roadmap](ROADMAP.md). An illustration of what stages 3–4 did to one record is in
+  [case_study_stage34_example.txt](case_study_stage34_example.txt).
+- The read-back verification and independent-validation patterns described above are
+  built into every recpipe command.
+
+All numbers in this document describe the original private engagement; the repository
+itself contains only synthetic data.
