@@ -44,20 +44,21 @@ jobs:
           python-version: "3.13"
       - run: python -m pip install -e .
       - name: audit
-        run: recpipe audit --input examples/sample_data --marker "PokerStars Hand #"
+        run: |
+          recpipe audit --input examples/sample_data --marker "PokerStars Hand #"
       - name: reduce
-        run: >
-          recpipe reduce --input examples/sample_data --output /tmp/reduced
-          --divisor 5 --marker "PokerStars Hand #" --apply --report /tmp/reduce_report.csv
+        run: |
+          recpipe reduce --input examples/sample_data --output /tmp/reduced \
+            --divisor 5 --marker "PokerStars Hand #" --apply --report /tmp/reduce_report.csv
       - name: transform
-        run: >
-          recpipe transform --input /tmp/reduced --output /tmp/anonymized
-          --rules examples/rules/anonymize.json --marker "PokerStars Hand #" --apply
+        run: |
+          recpipe transform --input /tmp/reduced --output /tmp/anonymized \
+            --rules examples/rules/anonymize.json --marker "PokerStars Hand #" --apply
       - name: validate reduce
-        run: >
-          recpipe validate --input examples/sample_data --output /tmp/reduced
-          --divisor 5 --marker "PokerStars Hand #"
+        run: |
+          recpipe validate --input examples/sample_data --output /tmp/reduced \
+            --divisor 5 --marker "PokerStars Hand #"
       - name: validate transform
-        run: >
-          recpipe validate --input /tmp/reduced --output /tmp/anonymized
-          --marker "PokerStars Hand #"
+        run: |
+          recpipe validate --input /tmp/reduced --output /tmp/anonymized \
+            --marker "PokerStars Hand #"
